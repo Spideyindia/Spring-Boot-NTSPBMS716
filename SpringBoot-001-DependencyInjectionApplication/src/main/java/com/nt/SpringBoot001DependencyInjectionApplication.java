@@ -26,7 +26,7 @@ public class SpringBoot001DependencyInjectionApplication {
 		//Dependency Lookup of target class
 		WishMessageGenerator generator = ctx.getBean("wmg",WishMessageGenerator.class);
 		
-		String result = generator.generate("Rajesh");
+		String result = generator.generate("Suresh");
 		
 		System.out.println(result);
 		
