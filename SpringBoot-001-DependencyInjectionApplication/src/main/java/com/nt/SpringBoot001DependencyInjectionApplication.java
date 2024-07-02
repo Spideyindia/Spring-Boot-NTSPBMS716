@@ -27,9 +27,12 @@ public class SpringBoot001DependencyInjectionApplication {
 		WishMessageGenerator generator = ctx.getBean("wmg",WishMessageGenerator.class);
 		
 		String result = generator.generate("Suresh");
+		String result2 = generator.generate("Sumit");
+		String result3 = generator.generate("Shankar");
 		
 		System.out.println(result);
-		
+		System.out.println(result2);
+		System.out.println(result3);
 	}
 
 }
